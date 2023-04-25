@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'yekan';
+    src: url("../fonts/yekanweb.eot");
+    src: url("../fonts/yekanweb.eot?#iefix") format("embedded-opentype"), url("../fonts/yekanweb.woff") format("woff"), url("../fonts/yekanweb.ttf") format("truetype"), url("../fonts/yekanweb.svg#web_Yekan") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'numbers';
+    src: url("../fonts/yekannumbers.eot");
+    src: url("../fonts/yekannumbers.eot?#iefix") format("embedded-opentype"), url("../fonts/yekannumbers.woff") format("woff"), url("../fonts/yekannumbers.ttf") format("truetype"), url("../fonts/yekannumbers.svg#web_Yekan") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'yekan', 'numbers';
+    font-size: 14px;
+    color: #505050;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+:root {
+    --color-hover: #001D6E;
+    --color-low-opacity: #7fb4ff4f;
+    --color-lows-opacity: #000B49;
+    --gray-color: #575757;
+    --white-color: #fff;
+    --white-low-opacity-color: rgba(255, 255, 255, 0.384);
+    --gray-text-color: #868686;
+    --black-text-color: #2D2927;
+    --blue-color: #3996FF;
+}
+/* Header */
+.top-nav{
+    height: 4rem;
+    background-color: var(--white-color);
+}
+.top-nav-right input{
+    background-color: var(--color-low-opacity);
+}
+.top-nav-right i{
+    cursor: pointer;
+   
+    color: rgb(165, 164, 164);
+}
+.top-nav-right i:hover{
+    color: var(--color-hover) !important;
+}
+.top-nav-left .top-nav-name{
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.top-nav-left .top-nav-name:hover{
+    color: var(--color-hover);
+}
+
+/* End Header */
+/* aside */
+.aside{
+    background-color: var(--color-hover);
+    color: var(--gray-text-color);
+}
+.aside-top i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.aside-top i:hover{
+   color: var(--white-color);
+}
+.aside-items{
+    gap: 1rem;
+    color:var(--gray-text-color);
+    transition: 0.4s all;
+}
+.aside-items li{
+    cursor: pointer;
+    transition: 0.4s all;
+    padding-right: 1rem;
+    padding: 0.7rem 1rem;
+}
+.aside-items li:hover{
+    background-color: var(--white-low-opacity-color);
+    color: var(--white-color);
+    border-left: 5px solid var(--blue-color);
+    
+}
+/* end aside */
